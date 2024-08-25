@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering Website</title>
+  <!-- BOOTSTRAP CDN LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- BOOTSTRAP CDN LINK -->
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css'>
+
+  <!-- GOOGLE FONTS LINK -->
+
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/menuitem.css">
+<!-- <link rel="stylesheet" href="/stylesheets/test2.css"> -->
+ <style>
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+}
+
+.cart-table img {
+    width: 50px;
+    height: 50px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.clear-cart {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+ </style>
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="/index" class="navbar-brand" id="logo"><img src="/images/image (1).png" alt=""
+          style="width: 150px; height: 60px; padding-left: 20px;"></a>
+
+    </div>
+    <div class="navbar-right">
+      <a href="/index" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="/menu" class="nav-link"> <i class="fa-solid fa-bars"></i> Menu</a>
+      <a href="./html/" class="nav-link"> <i class="fa-solid fa-magnifying-glass"></i> Search</a>
+      <a href="cart" class="nav-link cart"><i class="fa-solid fa-cart-shopping"></i> Cart <span
+          class="cart-count">0</span></a>
+      <a href="/contact" class="nav-link"> <i class="fa-solid fa-phone"></i>Contact</a>
+      <a href="/" class="nav-link"> <i class="fa-solid fa-user"></i> Logout</a>
+    </div>
+  </nav>
+
+   <div class="restaurant-menu">
+    <div class="restaurant-summary">
+      <img class="restaurant-img"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/2b4f62d606d1b2bfba9ba9e5386fabb7"
+        alt="Pizza Hut">
+      <div class="restaurant-summary-details">
+        <h2 class="restaurant-title">Pizza Hut</h2>
+        <p class="restaurant-tags">Pizzas</p>
+        <div class="restaurant-details">
+          <div class="restaurant-rating" style="color: white;">
+            <i class="fa-solid fa-star"></i>
+            <span>4.1</span>
+          </div>
+          <div class="restaurant-rating-slash">|</div>
+          <div>35-40 MINS</div>
+          <div class="restaurant-rating-slash">|</div>
+          <div>₹350 for two</div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+ 
+
+
+
+
+
+
+
+
+
+  <!-- <div class="restaurant-menu">
+    <div class="restaurant-summary">
+      <img class="restaurant-img"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/2b4f62d606d1b2bfba9ba9e5386fabb7"
+        alt="Pizza Hut">
+      <div class="restaurant-summary-details">
+        <h2 class="restaurant-title">Pizza Hut</h2>
+        <p class="restaurant-tags">Pizzas</p>
+        <div class="restaurant-details">
+          <div class="restaurant-rating" style="color: white;">
+            <i class="fa-solid fa-star"></i>
+            <span>4.1</span>
+          </div>
+          <div class="restaurant-rating-slash">|</div>
+          <div>35-40 MINS</div>
+          <div class="restaurant-rating-slash">|</div>
+          <div>₹350 for two</div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://example.com/tandoori-paneer.jpg" alt="Tandoori Paneer">
+        <div class="menu-item-details">
+          <h3>Tandoori Paneer</h3>
+          <p>₹299</p>
+          <button class="add-btn" data-name="Tandoori Paneer" data-price="299">Add to Cart</button>
+        </div>
+      </div>
+   Add more menu items here 
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="restaurant-menu-content">
+    <div class="menu-items-container">
+      <div class="menu-title-wrap">
+        <h3 class="menu-title">Recommended</h3>
+        <p class="menu-count">47 ITEMS</p>
+      </div>
+      <div class="menu-items-list">
+        <div class="menu-item">
+          <div class="menu-item-details">
+            <h3 class="item-title">Tandoori Paneer</h3>
+            <p class="item-cost">₹299.00</p>
+            <p class="item-desc">Serves 1 | It's our signature. Spiced paneer, crunchy onions & green capsicum, spicy
+              red paprika with delicious tandoori sauce and 100% mozzarella cheese! (PAN Per/Med-335 Kcal/100g </p>
+          </div>
+          <div class="menu-img-wrapper">
+            <img class="menu-item-img"
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/s5ld93rsknx0fhj6xarn"
+              alt="Tandoori Paneer">
+            <a href="cart"> <button class="add-btn" data-name="Tandoori Paneer" data-price="299"> ADD +</button> </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-details">
+            <h3 class="item-title">Veggie Supreme</h3>
+            <p class="item-cost">₹349.00</p>
+            <p class="item-desc">Serves 1 | A supreme combination of black olives, green capsicum, mushroom, onion,
+              spicy red paprika & juicy sweet corn with flavourful pan sauce and 100% mozzarella cheese.</p>
+          </div>
+          <div class="menu-img-wrapper">
+            <img class="menu-item-img"
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/z0c4xpovma1qtmu4tlls"
+              alt="Veggie Supreme">
+            <button class="add-btn" data-name="Veggie Supreme" data-price="349"> ADD +</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-details">
+            <h3 class="item-title">Margherita</h3>
+            <p class="item-cost">₹300.00</p>
+            <p class="item-desc">Pizza topped with our herb</p>
+          </div>
+          <div class="menu-img-wrapper">
+            <img class="menu-item-img"
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dpventcrozvfni0lqb10"
+              alt="Margherita">
+            <button class="add-btn" data-name="Margherita" data-price="300"> ADD +</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-details">
+            <h3 class="item-title">Country Feast</h3>
+            <p class="item-cost">₹349.00</p>
+            <p class="item-desc">Serves 1 | Loaded with herbed onion & green capsicum, sweet corn, tomato with signature
+              pan sauce and 100% mozzarella cheese. It's a feast you can't refuse .</p>
+          </div>
+          <div class="menu-img-wrapper">
+            <img class="menu-item-img"
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/c3832837392378cca98e484b89c313ba"
+              alt="Country Feast">
+            <button class="add-btn" data-name="Country Feast" data-price="349"> ADD +</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-details">
+            <h3 class="item-title">Veggie Feast</h3>
+            <p class="item-cost">₹329.00</p>
+            <p class="item-desc">Serves 1 | Herbed onion and green capsicum, juicy sweet corn & 100% mozzarella cheese
+              with flavourful pan sauce </p>
+          </div>
+          <div class="menu-img-wrapper">
+            <img class="menu-item-img"
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/cbye9x7wxeopwqvenn7g"
+              alt="Veggie Feast">
+            <button class="add-btn" data-name="Veggie Feast" data-price="329"> ADD +</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-details">
+            <h3 class="item-title">Classic Bread Stix</h3>
+            <p class="item-cost">₹119.00</p>
+            <p class="item-desc">Serves 1 | Freshly baked buttery bread stix, sprinkled with herbs (287 Kcal/100g).
+              Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</p>
+          </div>
+          <div class="menu-img-wrapper">
+            <img class="menu-item-img"
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/n2ycmete7ehes9mrerlw"
+              alt="Classic Bread Stix">
+            <button class="add-btn" data-name="Classic Bread Stix" data-price="119"> ADD +</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-details">
+            <h3 class="item-title">Loaded Bread Stix</h3>
+            <p class="item-cost">₹169.00</p>
+            <p class="item-desc">Serves 1 | Freshly baked bread stix, topped with cheesy dressing & herbs (320
+              Kcal/100g). Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</p>
+          </div>
+          <div class="menu-img-wrapper">
+            <img class="menu-item-img"
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/o0zibtrbtyjwznptrsgy"
+              alt="Loaded Bread Stix">
+            <button class="add-btn" data-name="Loaded Bread Stix" data-price="169"> ADD +</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-details">
+            <h3 class="item-title">Garlic Bread Spicy Supreme</h3>
+            <p class="item-cost">₹169.00</p>
+            <p class="item-desc">Serves 1 | Garlic bread topped with 100% mozzarella cheeese, onion & green chillies
+              (346 Kcal/100g). Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</p>
+          </div>
+          <div class="menu-img-wrapper">
+            <img class="menu-item-img"
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/m8ecjvtqcjtnt31uvobl"
+              alt="Garlic Bread Spicy Supreme">
+            <button class="add-btn" data-name="Garlic Bread Spicy Supreme" data-price="169"> ADD +</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-details">
+            <h3 class="item-title">Exotica Veggie Garlic Bread - New</h3>
+            <p class="item-cost">₹159.00</p>
+            <p class="item-desc">Serves 1 | Hut's signature garlic bread topped with spiced exotic veggies and cheesy
+              dressing (449 Kcal/100g). Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</p>
+          </div>
+          <div class="menu-img-wrapper">
+            <img class="menu-item-img"
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/e4f730c3f48f82fce15895dacf3e9081"
+              alt="Exotica Veggie Garlic Bread - New">
+            <button class="add-btn" data-name="Exotica Veggie Garlic Bread" data-price="159"> ADD +</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-details">
+            <h3 class="item-title">Sprinkled Fries - New</h3>
+            <p class="item-cost">₹109.00</p>
+            <p class="item-desc">Serves 1 | Baked fries seasoned with our signature peruvian seasoning (204 Kcal/100g)
+              Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</p>
+          </div>
+          <div class="menu-img-wrapper">
+            <img class="menu-item-img"
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/frgza6cm1sjezw79pjtu"
+              alt="Sprinkled Fries">
+            <button class="add-btn" data-name="Sprinkled Fries" data-price="109">ADD +</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="cart-page" style="margin-top: 70px">
+      <div class="cart-header">
+        <h4>Cart</h4>
+        <button class="close-cart" style="padding: 10px;">X</button>
+      </div>
+      <div class="cart-body">
+        <div class="cart-items-container"></div>
+        <div class="cart-total">
+          <h5>Total: ₹<span class="total-price">0</span></h5>
+        </div>
+        <button class="btn btn-success">Order Now</button>  <button class="btn btn-danger clear-cart">Clear Cart</button>
+      </div>
+    </div>  -->
+
+
+
+
+  <!-- <div class="cart-summary">
+    <h3>Your Cart</h3>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Item Picture</th>
+          <th>Item Name</th>
+          <th>Restaurant</th>
+          <th>Cost</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody class="cart-items">
+
+      </tbody>
+    </table>
+    <div class="cart-total">
+      <span>Total:</span>
+      <span class="total-amount">₹0</span>
+    </div>
+    <button class="btn btn-danger clear-cart">Clear Cart</button>
+  </div>
+   -->
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cartItemsContainer = document.querySelector('.cart-items');
+      const totalAmount = document.querySelector('.total-amount');
+      const clearCartButton = document.querySelector('.clear-cart');
+      let cart = [];
+
+      function updateCart() {
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+        cart.forEach(item => {
+          const subtotal = item.price * item.count;
+          total += subtotal;
+          const row = document.createElement('tr');
+          row.innerHTML = `
+                      <td><img src="${item.image}" alt="${item.name}"></td>
+                      <td>${item.name}</td>
+                      <td>${item.restaurant}</td>
+                      <td>₹${item.price}</td>
+                      <td>${item.count}</td>
+                      <td>₹${subtotal}</td>
+                      <td><button class="remove-item" data-name="${item.name}">×</button></td>
+                  `;
+          cartItemsContainer.appendChild(row);
+        });
+        totalAmount.textContent = `₹${total}`;
+      }
+
+      function addItemToCart(name, price, image, restaurant) {
+        const existingItem = cart.find(item => item.name === name);
+        if (existingItem) {
+          existingItem.count += 1;
+        } else {
+          cart.push({ name, price, image, restaurant, count: 1 });
+        }
+        updateCart();
+      }
+
+      function removeItemFromCart(name) {
+        cart = cart.filter(item => item.name !== name);
+        updateCart();
+      }
+
+      function clearCart() {
+        cart = [];
+        updateCart();
+      }
+
+      document.querySelectorAll('.add-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const name = button.getAttribute('data-name');
+          const price = parseFloat(button.getAttribute('data-price'));
+          const image = button.closest('.menu-item').querySelector('img').src;
+          const restaurant = document.querySelector('.restaurant-title').textContent;
+          addItemToCart(name, price, image, restaurant);
+        });
+      });
+
+      cartItemsContainer.addEventListener('click', (e) => {
+        if (e.target.classList.contains('remove-item')) {
+          const name = e.target.getAttribute('data-name');
+          removeItemFromCart(name);
+        }
+      });
+
+      clearCartButton.addEventListener('click', clearCart);
+    });
+
+
+
+  </script> -->
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.add-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const name = button.getAttribute('data-name');
+                const price = parseFloat(button.getAttribute('data-price'));
+                const image = button.closest('.menu-item').querySelector('img').src;
+                const restaurant = document.querySelector('.restaurant-title').textContent; // Modify this line to get the restaurant name if available
+                addItemToCart(name, price, image, restaurant);
+            });
+        });
+
+        function addItemToCart(name, price, image, restaurant) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.count += 1;
+            } else {
+                cart.push({ name, price, image, restaurant, count: 1 });
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Item added to cart');
+        }
+    });
+</script>
+
+</body>
+
+</html>

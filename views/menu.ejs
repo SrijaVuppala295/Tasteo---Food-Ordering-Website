@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering Website</title>
+  <!-- BOOTSTRAP CDN LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- BOOTSTRAP CDN LINK -->
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- GOOGLE FONTS LINK -->
+
+ <link rel="stylesheet" href="/stylesheets/style.css">
+ <link rel="stylesheet" href="/stylesheets/menu.css">
+ 
+
+</head>
+
+<body style="margin-top: 7rem">
+    <nav class="navbar">
+        <div class="navbar-left">
+          <a href="/" class="navbar-brand" id="logo"><img src="/images/image (1).png" alt=""
+            style="width: 150px; height: 60px; padding-left: 20px;"></a>
+            
+        </div>
+        <div class="navbar-right">
+            <a href="/index" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="/menu" class="nav-link"> <i class="fa-solid fa-bars"></i> Menu</a>
+          
+            <a href="/cart" class="nav-link cart">
+              <i class="fa-solid fa-cart-shopping"></i> Cart <span class="cart-count">0</span>
+            </a>
+            <a href="/contact" class="nav-link">  <i class="fa-solid fa-phone"></i>Contact</a>
+            <a href="/" class="nav-link">  <i class="fa-solid fa-user"></i> Logout</a>
+   </div>
+    </nav>
+
+
+  
+  
+<div class="Food-menu">
+    <h2 class="food-menu-title"><b>Top restaurant chains in Hyderabad</b></h2>
+    <div class="Food-card">
+        <a href="/pizzahut">
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <span class="Food-item-link">
+                        <div class="card-img">
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>ITEMS AT ₹199</p>
+                        </div>
+                    </span><span class="Food-item-link">
+                        <div class="pname">
+                            <h4>Pizza Hut</h4>
+                            <div class="rating">
+                                <p>4 </p>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Pizzas</p>
+                            <p class="p2">₹350 for two</p>
+                        </div>
+                        <div class="time">
+                            <p>50 min</p>
+                        </div>
+                        <div class="line">
+                        </div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div>
+                                <p>Follows all Max Safety measures to ensure your food is safe</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="/burger">
+                <div class="Food-item">
+                    <div class="Food-item-margin">
+                        <span class="Food-item-link">
+                            <div class="card-img">
+                                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/11/55d0daa1-ad2e-4893-be06-4709c5c68d49_42145.JPG" alt="restaurant img">
+                            </div>
+                            <div class="off">
+                                <p>60% OFF UPTO ₹120</p>
+                            </div>
+                        </span>
+                        <span class="Food-item-link">
+                            <div class="pname">
+                                <h4>Burger King</h4>
+                                <div class="rating">
+                                    <p>4.2 </p>
+                                    <i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i>
+                                </div>
+                            </div>
+                            <div class="Category">
+                                <p class="p1">Burgers, American</p>
+                                <p class="p2">₹350 for two</p>
+                            </div>
+                            <div class="time">
+                                <p>79 min</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="covid">
+                                <div class="covid-img">
+                                    <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                                </div>
+                                <p>Follows all Max Safety measures to ensure your food is safe</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="/restaurants/32844">
+                <div class="Food-item">
+                    <div class="Food-item-margin">
+                        <span class="Food-item-link">
+                            <div class="card-img">
+                                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/4/1/af1378f3-7a2d-4fe8-a2c9-04f1149f2a59_32844.jpg" alt="restaurant img"></div>
+                                <div class="off">
+                                    <p>40% OFF UPTO ₹80</p>
+                                </div>
+                            </span>
+                            <span class="Food-item-link">
+                                <div class="pname">
+                                    <h4>McDonald's</h4>
+                                    <div class="rating">
+                                        <p>4.2 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Burgers, Beverages, Cafe, Desserts</p><p class="p2">₹400 for two</p></div><div class="time"><p>50 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                        <a href="/restaurants/72848">
+                                            <div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/5116a385bac0548e06c33c08350fbf11" alt="restaurant img"></div><div class="off"><p>Flat Rs. 49 OFF</p></div></span>
+                                            
+                                            <span class="Food-item-link"><div class="pname"><h4>The Belgian Waffle Co.</h4><div class="rating"><p>4.5 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Waffle, Desserts, Ice Cream, Beverages</p><p class="p2">₹200 for two</p></div><div class="time"><p>60 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                            
+                                            <a href="/restaurants/43794"><div class="Food-item"><div class="Food-item-margin">
+                                                <span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/vrf6vb5thsjupietlk0n" alt="restaurant img"></div><div class="off"><p>50% OFF UPTO ₹100</p></div></span><span class="Food-item-link"><div class="pname"><h4>Hotel Shubham Palace - Dhanturi Group of Hotels</h4><div class="rating"><p>4.2 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Biryani, Chinese, South Indian, North Indian, Tandoor</p><p class="p2">₹300 for two</p></div><div class="time"><p>74 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/425751"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/13/e4024d21-cfea-4237-a1fa-a95312227f9d_425751.JPG" alt="restaurant img"></div><div class="off"><p>50% OFF UPTO ₹100</p></div></span><span class="Food-item-link"><div class="pname"><h4>Kwality Walls Frozen Dessert and Ice Cream Shop</h4><div class="rating"><p>4.5 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Desserts, Ice Cream, Ice Cream Cakes</p><p class="p2">₹300 for two</p></div><div class="time"><p>41 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/262564"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/af33b81798b11deba338e94b7585d348" alt="restaurant img"></div><div class="off"><p>₹125 OFF ABOVE ₹199</p></div></span><span class="Food-item-link"><div class="pname"><h4>Faasos - Wraps, Rolls &amp; Shawarma</h4><div class="rating"><p>3.7 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Kebabs, Fast Food, Snacks, American, Healthy Food, Desserts, Beverages</p><p class="p2">₹200 for two</p></div><div class="time"><p>52 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/2533"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kdwjwlujtszrp8cmnqxb" alt="restaurant img"></div><div class="off"><p>30% OFF UPTO ₹75</p></div></span><span class="Food-item-link"><div class="pname"><h4>Agra Sweets Banjara</h4><div class="rating"><p>4.2 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Sweets, Desserts, Chaat, Snacks, Beverages</p><p class="p2">₹250 for two</p></div><div class="time"><p>61 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/616941"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/14/ed247efa-5543-4849-82c6-5709b89c199e_616941.JPG" alt="restaurant img"></div><div class="off"><p>60% OFF UPTO ₹120</p></div></span><span class="Food-item-link"><div class="pname"><h4>CakeZone Patisserie</h4><div class="rating"><p>4.4 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Bakery, Desserts, Sweets, Ice Cream</p><p class="p2">₹200 for two</p></div><div class="time"><p>58 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/26812"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/85ccae4e3576f9330af102c46ca85395" alt="restaurant img"></div><div class="off"><p>50% OFF UPTO ₹100</p></div></span><span class="Food-item-link"><div class="pname"><h4>Baskin Robbins - Ice Cream Desserts</h4><div class="rating"><p>4.3 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Ice Cream, Desserts</p><p class="p2">₹200 for two</p></div><div class="time"><p>46 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/4252"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/otj72polm4lureuofoln" alt="restaurant img"></div><div class="off"><p>20% OFF ABOVE ₹600</p></div></span><span class="Food-item-link"><div class="pname"><h4>Hotel Sitara Grand - Dhanturi Group of hotels</h4><div class="rating"><p>4.2 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Biryani, Chinese, South Indian, North Indian, Tandoor</p><p class="p2">₹300 for two</p></div><div class="time"><p>69 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/60843"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img">
+                                                  <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/ugyq88gp44avwenebbmx" alt="restaurant img"></div><div class="off"><p>₹75 OFF ABOVE ₹299</p></div></span><span class="Food-item-link"><div class="pname"><h4>Hotel Swagath Grand - Dhanturi Group of Hotels</h4><div class="rating"><p>4.2 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Biryani, Chinese, South Indian, Tandoor</p><p class="p2">₹300 for two</p></div><div class="time"><p>51 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/251720"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/cd2oq09oalr3skxecs3g" alt="restaurant img"></div><div class="off"><p>20% OFF UPTO ₹50</p></div></span><span class="Food-item-link"><div class="pname"><h4>Euphoria</h4><div class="rating"><p>4.6 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Desserts, Bakery</p><p class="p2">₹600 for two</p></div><div class="time"><p>55 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/826647"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/67d17abfeb3a5da6103b9424f6dbe973" alt="restaurant img"></div><div class="off"><p>50% OFF UPTO ₹100</p></div></span><span class="Food-item-link"><div class="pname"><h4>Pastas By Pizza Hut</h4><div class="rating"><p>4.1 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Pastas</p><p class="p2">₹400 for two</p></div><div class="time"><p>51 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/616945"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/15/38e8b11e-7a4b-4791-a005-3643807d0509_616945.jpg" alt="restaurant img"></div><div class="off"><p>60% OFF UPTO ₹120</p></div></span><span class="Food-item-link"><div class="pname"><h4>The Dessert Heaven - Pastry, Brownie and Cakes</h4><div class="rating"><p>4.4 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Bakery, Desserts, Sweets, Ice Cream</p><p class="p2">₹200 for two</p></div><div class="time"><p>65 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                
+                                                <a href="/restaurants/690996"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/15/c6f2885d-d74e-4de1-9273-dcaf75d6c1a3_690996.jpg" alt="restaurant img"></div><div class="off"><p>60% OFF UPTO ₹120</p></div></span><span class="Food-item-link"><div class="pname"><h4>Ovenfresh Cakes And Desserts</h4><div class="rating"><p>4.3 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Bakery, Desserts, Beverages, Ice Cream, Sweets, Juices, Bengali, Pizzas</p><p class="p2">₹200 for two</p></div><div class="time"><p>65 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/84832"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/dm0qaqmiwqv6napryz9q" alt="restaurant img"></div><div class="off"><p>₹50 OFF ABOVE ₹249</p></div></span><span class="Food-item-link"><div class="pname"><h4>Mithaiwala</h4><div class="rating"><p>4.3 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Sweets, Desserts, Snacks, Chaat</p><p class="p2">₹400 for two</p></div><div class="time"><p>49 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/686375"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/6f6d8daae5477dc213feeb87bd893926" alt="restaurant img"></div><div class="off"><p>15% OFF UPTO ₹500</p></div></span><span class="Food-item-link"><div class="pname"><h4>ITC Fabelle Chocolates</h4><div class="rating"><p>4.5 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Bakery, Desserts</p><p class="p2">₹600 for two</p></div><div class="time"><p>52 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                <a href="/restaurants/801423"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/c583da4b69d264ffe705e5918fad0e98" alt="restaurant img"></div><div class="off"><p>50% OFF UPTO ₹100</p></div></span><span class="Food-item-link"><div class="pname"><h4>Makhani Darbar</h4><div class="rating"><p>3.8 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Kebabs, Mughlai, Beverages, Desserts</p><p class="p2">₹500 for two</p></div><div class="time"><p>50 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                
+                                                <a href="/restaurants/566468"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/c583ca6ce40b426797a78ae2ac91f2ec" alt="restaurant img"></div><div class="off"><p>50% OFF UPTO ₹100</p></div></span><span class="Food-item-link"><div class="pname"><h4>Faasos' Signature Wraps &amp; Rolls</h4><div class="rating"><p>3.7 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Fast Food, Snacks, North Indian, Desserts, Beverages</p><p class="p2">₹350 for two</p></div><div class="time"><p>51 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                
+                                                <a href="/restaurants/700128"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/fb3be3440f81b88157f50c9485e8c127" alt="restaurant img"></div><div class="off"><p>₹100 OFF ABOVE ₹249</p></div></span><span class="Food-item-link"><div class="pname"><h4>Hotel Tulips Grand</h4><div class="rating"><p>4.3 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Biryani, Chinese, Tandoor, Seafood, South Indian, Desserts, Beverages</p><p class="p2">₹400 for two</p></div><div class="time"><p>38 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                
+                                                <a href="/restaurants/19294"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/hotloggujalocj9afsyo" alt="restaurant img"></div><div class="off"><p>50% OFF UPTO ₹95</p></div></span><span class="Food-item-link"><div class="pname"><h4>Sri Sampoorna Grand</h4><div class="rating"><p>4.2 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">North Indian, Chinese, Andhra, Biryani, Desserts, Juices, Seafood</p><p class="p2">₹200 for two</p></div><div class="time"><p>39 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a>
+                                                
+                                                
+                                                <a href="/restaurants/651585"><div class="Food-item"><div class="Food-item-margin"><span class="Food-item-link"><div class="card-img"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/8951a6325821579f1c66917825dbbc8b" alt="restaurant img"></div><div class="off"><p>Flat Rs. 49 OFF</p></div></span><span class="Food-item-link"><div class="pname"><h4>Sri Venkata Sai Swagruha Foods</h4><div class="rating"><p>4.4 </p><i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></div></div><div class="Category"><p class="p1">Snacks</p><p class="p2">₹700 for two</p></div><div class="time"><p>38 min</p></div><div class="line"></div><div class="covid"><div class="covid-img"><img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img"></div><p>Follows all Max Safety measures to ensure your food is safe</p></div></span></div></div></a></div></div>
+
+
+
+
+
+<!-- FOOTER -->
+<footer style="background-color: #F1F1F1;">
+    <div class="sec1">
+      <section class="sec2">
+        <img src="/images/image (1).png" alt="">
+        <div class="sec2-emp"></div>
+        <section class="selector">
+          <div class="India">
+            <img src="/images/India.png" alt="">
+            <p>India</p>
+            <i class="fa-solid fa-chevron-down" style="color:rgb(0,0,0,);" ></i>
+          </div>
+          <div class="English">
+            <i class="fa-solid fa-globe" style="color:rgb(0,0,0,);"></i>
+            <p>English</p>
+            <i class="fa-solid fa-chevron-down" style="color:rgb(0,0,0,);">
+            </i>
+          </div>
+        </section>
+      </section>
+      <div class="main-footer">
+        <div class="foot1">
+          <h6>ABOUT TasteO</h6>
+          <nav>
+            <a href="#">
+              <p> Who are we</p>
+            </a>
+            <a href="#">
+              <p>Blog</p>
+            </a>
+            <a href="#">
+              <p> Work with Us</p>
+            </a>
+            <a href="#">
+              <p>Investor Relations</p>
+            </a>
+            <a href="#">
+              <p>Report Fraud</p>
+            </a>
+            <a href="#">
+              <p>Contact Us</p>
+            </a>
+          </nav>
+      </div>
+          <div class="foot2">
+            <h6>Company</h6>
+          <nav>
+            <a href="#">
+              <p> About</p>
+            </a>
+            <a href="#">
+              <p>Features</p>
+            </a>
+            <a href="#">
+              <p>Team</p>
+            </a>
+            <a href="#">
+              <p>Menu</p>
+            </a>
+            <a href="#">
+              <p>Company</p>
+            </a>
+            <a href="#">
+              <p>How this works</p>
+            </a>
+          </nav>
+          </div>
+       
+        <div class="foot3">
+          <div class="foot3-1">
+            <h6>FOR RESTAURANTS</h6>
+            <nav>
+              <a href="#">
+                <p>Partner with Us</p>
+              </a>
+              <a href="#">
+                <p>Apps For You</p>
+              </a>
+            </nav>
+          </div>
+         
+            <div class="foot3-2">
+              <h6>FOR ENTERPRISES</h6>
+              <nav>
+                <a href="#">
+                  <p>TasteO For Enterprise</p>
+                </a>
+              </nav>
+            </div>
+        </div>
+  
+          <div class="foot4">
+            <h6>Learn More</h6>
+          <nav>
+            <a href="#">
+              <p>Privacy</p>
+            </a>
+            <a href="#">
+              <p>Security</p>
+            </a>
+            <a href="#">
+              <p>Terms</p>
+            </a>
+            <a href="#">
+              <p>Services</p>
+            </a>
+            <a href="#">
+              <p>SiteMap</p>
+            </a>
+          </nav>
+        </div>
+          <div class="foot5">
+            <h6>SOCIAL LINKS</h6>
+             <div class="icons">
+              <a target="_blank" href="#">
+                <i class="fa-brands fa-linkedin" style="color:rgb(0,0,0,);">
+                </i>
+              </a>
+              <a target="_blank" href="#">
+                <i class="fa-brands fa-instagram" style="color:rgb(0,0,0,);">
+              </i>
+              </a>
+              <a target="_blank" href="#">
+                <i class="fa-brands fa-twitter" style="color:rgb(0,0,0,);">
+             </i>
+              </a>
+              <a target="_blank" href="#">
+                <i class="fa-brands fa-youtube" style="color:rgb(0,0,0,);">
+               </i>
+              </a>
+              <a target="_blank" href="#">
+                <i class="fa-brands fa-facebook" style="color:rgb(0,0,0,);">
+               </i>
+                </a>
+             </div>
+            <div class="blank1"></div>
+            <section class="store">
+              <a href="#">
+                <div class="store-img">
+                  <img src="/images/app_store.png" alt="">
+                </div>
+              </a>
+              <div class="blank2"></div>
+              <a href="#">
+                <div class="store-img">
+                  <img src="/images/play_store.png" alt="">
+                </div>
+              </a>
+            </section>
+          </div>
+      </div>
+      <hr class="h-line">
+    
+      <p class="copyright">
+        "By continuing past this page,you agree to our Terms of Service, Cookie Policy,Privacy Policy, and Content Policies.All trademarks are properties of their respestive owners,© TaestO Ltd.All rights reserved."
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+</html>

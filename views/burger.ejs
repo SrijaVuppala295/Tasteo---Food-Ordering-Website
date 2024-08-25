@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering Website</title>
+  <!-- BOOTSTRAP CDN LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- BOOTSTRAP CDN LINK -->
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css'>
+
+  <!-- GOOGLE FONTS LINK -->
+
+ <link rel="stylesheet" href="/stylesheets/style.css">
+ <!-- <link rel="stylesheet" href="../css/menuitems.css"> -->
+ <link rel="stylesheet" href="/stylesheets/menuitem.css">
+
+ 
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <a href="/index" class="navbar-brand" id="logo"><img src="/images/image (1).png" alt=""
+            style="width: 150px; height: 60px; padding-left: 20px;"></a>
+            
+        </div>
+        <div class="navbar-right">
+            <a href="/index" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="/menu" class="nav-link"> <i class="fa-solid fa-bars"></i> Menu</a>
+           
+            <a href="/cart" class="nav-link cart">
+              <i class="fa-solid fa-cart-shopping"></i> Cart <span class="cart-count">0</span>
+            </a>
+            <a href="/contact" class="nav-link">  <i class="fa-solid fa-phone"></i>Contact</a>
+            <a href="/" class="nav-link">  <i class="fa-solid fa-user"></i> Logout</a>
+   </div>
+    </nav>
+a
+
+
+
+<div class="restaurant-menu">
+    <div class="restaurant-summary">
+        <img class="restaurant-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/11/55d0daa1-ad2e-4893-be06-4709c5c68d49_74644.JPG" alt="Burger King">
+        <div class="restaurant-summary-details">
+            <h2 class="restaurant-title">Burger King</h2>
+            <p class="restaurant-tags">Burgers, American</p>
+            <div class="restaurant-details">
+                <div class="restaurant-rating" style="color: white;">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.4</span>
+                </div>
+                <div class="restaurant-rating-slash">|</div>
+                <div>25-30 MINS</div>
+                <div class="restaurant-rating-slash">|</div>
+                <div>₹350 for two</div>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-menu-content">
+        <div class="menu-items-container">
+            <div class="menu-title-wrap">
+                <h3 class="menu-title">Recommended</h3>
+                <p class="menu-count">159 ITEMS</p>
+            </div>
+            <div class="menu-items-list">
+               
+
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                      <h3 class="item-title">Sprinkled Fries - New</h3>
+                      <p class="item-cost">₹109.00</p>
+                      <p class="item-desc">Serves 1 | Baked fries seasoned with our signature peruvian seasoning (204 Kcal/100g).</p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                      <img class="menu-item-img"
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/frgza6cm1sjezw79pjtu"
+                        alt="Sprinkled Fries">
+                      <button class="add-btn" data-name="Sprinkled Fries" data-price="109">ADD +</button>
+                    </div>
+                  </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                        <h3 class="item-title">Crispy Veg Double Patty Burger+Fries(M)</h3>
+                        <p class="item-cost">₹189.00</p>
+                        <p class="item-desc">Crispy Veg Double Patty Burger+Fries(M) 
+                            Qty: 318 Gms| Kcal: 863.9 | Carbs 516 Gms| Sugar: 9.1 Gms| Fat: 37.1 Gms
+                        </p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/2b8b717cfc1d7aac9c1c9d16594735f8" alt="Crispy Veg Double Patty Burger+Fries(M)">
+                        <button class="add-btn" data-name="Crispy Veg Double Patty Burger+Fries(M)" data-price="189">ADD +</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                        <h3 class="item-title">Crispy Chicken Double Patty Burger+Fries(M)</h3>
+                        <p class="item-cost">₹229.00</p>
+                        <p class="item-desc">Crispy Chicken Double Patty Burger+Fries(M) 
+                            Qty: 296 Gms|Saturated fat: 17.2 Gms| Protein: 23.3 Gms| Sodium: 1415.9 Mg 
+                            Contains: Gluten, Soybean, Milk, Sesame seeds
+                        </p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d065d5e9870ed98fb74d6b58c6e4f455" alt="Crispy Chicken Double Patty Burger+Fries(M)">
+                        <button class="add-btn" data-name="Crispy Chicken Double Patty Burger+Fries(M)" data-price="229">ADD +</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                        <h3 class="item-title">Classic Family Feast for 4 - Veg</h3>
+                        <p class="item-cost">₹731.00</p>
+                        <p class="item-desc">Save Rs. 200 | 2 Crispy Veg + BK Veggie + Veg Crunchy Taco + 2 Med Fries + 2 Dips + Coca Cola Medium + Chocolate Thick Shake.
+                            Kcal: 2926.9 | Carbs 332.3 Gms| Sugar: 145 Gms| Fat: 114.9 Gms| Saturated fat: 51.7 Gms| Protein: 55.8 Gms| Sodium: 4274 Mg 
+                            Contains: Gluten, Soybean , Milk , Sesame seeds
+                        </p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/4/6bd5ee8a-ee15-4647-a6ff-64c73da5398f_a6938e55-0190-42de-bae8-2c05615d25bf.jpg" alt="Classic Family Feast for 4 - Veg">
+                        <button class="add-btn" data-name="Classic Family Feast for 4 - Veg" data-price="731">ADD +</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                        <h3 class="item-title">Premium Family Feast for 4 - Chicken</h3>
+                        <p class="item-cost">₹982.00</p>
+                        <p class="item-desc">Kcal: 3321.6 | Carbs 1228.2 Gms| Sugar: 147.2 Gms| Fat: 141.8 Gms| Saturated fat: 49.1 Gms| Protein: 89.2 Gms| Sodium: 5008.5 Mg 
+                            Contains: Gluten, Soybean, Milk, Sesame seeds
+                        </p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/4/360ad5e4-756d-41dc-b7f7-d77012b16477_a9716f71-56ef-4f9f-8beb-4fb5bce3ac0f.jpg" alt="Premium Family Feast for 4 - Chicken">
+                        <button class="add-btn" data-name="Premium Family Feast for 4 - Chicken" data-price="982">ADD +</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                        <h3 class="item-title">Veg Whopper</h3>
+                        <p class="item-cost">₹179.00</p>
+                        <p class="item-desc">Our Signature Whopper with Crunchy Veg Patty, Onions, Lettuce, Tomatoes (Seasonal), Gherkins, Creamy And Smoky Sauces With Xxl Buns. 
+                            Qty: 285 Gms| Kcal: 681.2 | Carbs 97.1 Gms| Sugar: 23.1 Gms| Fat: 25.4 Gms| Saturated fat: 9.8 Gms| Protein: 15.8 Gms| Sodium: 987.8 Mg 
+                            Contains: Gluten, Soybean, Milk, Mustard, Sulphites, Tomato
+                        </p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/8b2c56de2765a17bbf33ad752e0e9b08" alt="Veg Whopper">
+                        <button class="add-btn" data-name="Veg Whopper" data-price="179">ADD +</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                        <h3 class="item-title">Chicken Whopper</h3>
+                        <p class="item-cost">₹199.00</p>
+                        <p class="item-desc">Our Signature Whopper with 7 Layers. Flame Grilled Pattty, Fresh Onion, Crispy Lettuce, Juicy Tomatoes (Seasonal), Tangy Pickles, Creamy and Smoky Sauces with 5" buns
+                            Qty: 330 Gms| Kcal: 780.4 | Carbs 68.5 Gms| Sugar: 15.5 Gms| Fat: 39.8 Gms| Saturated fat: 10.9 Gms| Protein: 33 Gms| Sodium: 1684.9 Mg 
+                            Contains: Gluten, Soybean, Milk, Egg, Mustard, Sulphites, Tomato
+                        </p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/8d4eec799d734d8fd0e2909e5dbf8d1b" alt="Chicken Whopper">
+                        <button class="add-btn" data-name="Chicken Whopper" data-price="199">ADD +</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                        <h3 class="item-title">Cheese Meltdown Whopper</h3>
+                        <p class="item-cost">₹229.00</p>
+                        <p class="item-desc">Flame Grilled Chicken Patty, Crispy Onion Rings, Veggies & Cheese Slice Filled with Cheese. 
+                            Qty: 360 Gms| Kcal: 986.3 | Carbs 84.6 Gms| Sugar: 22.3 Gms| Fat: 50.1 Gms| Saturated fat: 14.1 Gms| Protein: 41.5 Gms| Sodium: 1692.5 Mg 
+                            Contains: Gluten, Soybean, Milk, Egg, Mustard, Sulphites, Tomato
+                        </p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/2b0eac7fb3dc432f8cf9cda6880e21cd" alt="Cheese Meltdown Whopper">
+                        <button class="add-btn" data-name="Cheese Meltdown Whopper" data-price="₹229">ADD +</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                        <h3 class="item-title">Fiery Chicken Burger</h3>
+                        <p class="item-cost">₹239.00</p>
+                        <p class="item-desc">Spicy chicken fillet with crispy lettuce, juicy tomatoes (Seasonal), creamy and tandoori sauce in soft corn dusted buns
+                            Qty: 232 Gms| Kcal: 639.7 | Carbs 56.4 Gms| Sugar: 9.2 Gms| Fat: 35.7 Gms| Saturated fat: 4.9 Gms| Protein: 19.5 Gms| Sodium: 1136.2 Mg 
+                            Contains: Gluten, Soybean, Milk, Egg, Mustard, Sulphites, Tomato
+                        </p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/b64da10870d7a0ed29ff2f5d1c04aa9a" alt="Fiery Chicken Burger">
+                        <button class="add-btn" data-name="Fiery Chicken Burger" data-price="239">ADD +</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                        <h3 class="item-title">Crispy Veg Burger</h3>
+                        <p class="item-cost">₹109.00</p>
+                        <p class="item-desc">Our best-selling burger with crispy veg patty, fresh onion and our signature sauce
+                            Qty: 139 Gms| Kcal: 447.8 | Carbs 59 Gms| Sugar: 6 Gms| Fat: 18.2 Gms| Saturated fat: 8.3 Gms| Protein: 6.4 Gms| Sodium: 666.5 Mg 
+                            Contains: Gluten, Soybean, Milk, Mustard, Sulphites
+                        </p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/61f0e4c1cfdf0d461864be2ac267e1ff" alt="Crispy Veg Burger">
+                        <button class="add-btn" data-name="Crispy Veg Burger" data-price="109">ADD +</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-details">
+                        <h3 class="item-title">Crispy Chicken Burger</h3>
+                        <p class="item-cost">₹129.00</p>
+                        <p class="item-desc">Best-selling burger with crispy chicken patty, fresh onion and our signature sauce
+                            Qty: 142 Gms| Kcal: 404.5 | Carbs 41.1 Gms
+                        </p>
+                    </div>
+                    <div class="menu-img-wrapper">
+                        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/9f30309e4d5c1698e0842b6a5e442347" alt="Crispy Chicken Burger">
+                        <button class="add-btn" data-name="Crispy Chicken Burger" data-price="129">ADD +</button>
+                    </div>
+                </div>
+            <!-- </div>
+        </div>
+    </div>
+</div> -->
+
+    
+    
+    
+    
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Veg Makhani Burst + Whopper Jr Veg</h3>
+        <p class="item-cost">₹229.00</p>
+        <p class="item-desc">Veg Makhani + Whopper Jr Veg 
+            Qty: 329 Gms| Kcal: 771 | Carbs 110.1 Gms| Sugar: 17.2 Gms| Fat: 29.2 Gms
+        </p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/7b7d7c01-d1f5-4983-a49a-55ae6dec0e85_29587c5e-1372-4e3a-956d-f4a2dd78ebdf.jpg" alt="Veg Makhani Burst + Whopper Jr Veg">
+        <button class="add-btn" data-name="Veg Makhani Burst + Whopper Jr Veg" data-price="229">ADD +</button>
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">4 Crispy Veg + 2 Medium Fries</h3>
+        <p class="item-cost">₹400.00</p>
+        <p class="item-desc">4 Crispy Veg + 2 Medium Fries 
+            Qty: 728 Gms| Kcal: 2101.2 | Carbs 1068.1 Gms| Sugar: 29.9 Gms| Fat: 89.2 Gms| Saturated fat: 32.7 Gms| Protein: 57.6 Gms
+        </p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/26/35fd0ea5-d817-451b-bb22-01124511706b_9c70609b-9ae0-40c7-8701-45dc15b7e9c8.jpg" alt="4 Crispy Veg + 2 Medium Fries">
+        <button class="add-btn" data-name="4 Crispy Veg + 2 Medium Fries" data-price="400">ADD +</button>
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Medium Fries</h3>
+        <p class="item-cost">₹115.00</p>
+        <p class="item-desc">The Perfect Crispy Partner.
+            Qty: 114 Gms| Kcal: 332.5 | Carbs 445.39 Gms| Sugar: 0 Gms| Fat: 14.4 Gms| Saturated fat: 6.8 Gms| Protein: 5.9 Gms| Sodium: 528.8 Mg 
+            Contains: Gluten
+        </p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/3/14/fefae94a-53cd-421c-9f1f-d0f642949728_2ddc8be1-0a65-430d-9de8-542fae4ce739.jpg" alt="Medium Fries">
+        <button class="add-btn" data-name="Medium Fries" data-price="115">ADD +</button>
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">King Fries</h3>
+        <p class="item-cost">₹130.00</p>
+        <p class="item-desc">The Perfect Crispy Partner 
+            Qty: 156 Gms| Kcal: 455 | Carbs 609.48 Gms| Sugar: 0 Gms| Fat: 19.7 Gms| Saturated fat: 9.31 Gms| Protein: 8 Gms| Sodium: 723.7 Mg 
+            Contains: Gluten
+        </p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/3/14/fefae94a-53cd-421c-9f1f-d0f642949728_2ddc8be1-0a65-430d-9de8-542fae4ce739.jpg" alt="King Fries">
+        <button class="add-btn" data-name="King Fries" data-price="130">ADD +</button>
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">King Peri Peri Fries</h3>
+        <p class="item-cost">₹159.00</p>
+        <p class="item-desc">Crispy Fries With Tangy Peri Peri Spice.  
+            Qty: 161 Gms| Kcal: 467.8 | Carbs 611.7 Gms| Sugar: 0.9 Gms| Fat: 20 Gms| Saturated fat: 9.3 Gms| Protein: 8.4 Gms| Sodium: 1193.7 Mg 
+            Contains: Gluten, Soybean
+        </p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/fa747205-3c4d-497c-a948-65f3c224a4cf_11129959-8182-4b8c-bbb5-db49665fba19.jpg" alt="King Peri Peri Fries">
+        <button class="add-btn" data-name="King Peri Peri Fries" data-price="159">ADD +</button>
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Chocolate Thick Shake</h3>
+        <p class="item-cost">₹189.00</p>
+        <p class="item-desc">Qty:  Gms300 ML| Kcal: 496.08 | Carbs 87.69 Gms| Sugar: 61.44 Gms| Fat: 11.28 Gms| Saturated fat: 7.17 Gms| Protein: 10.95 Gms| Sodium: 10.68 Mg 
+            Contains: , Soybean , Milk
+        </p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/cddbd1f0-c2fc-4af3-a108-b482cc0027e2_0564277b-594b-4aa9-a7cd-6796803092fc.jpg" alt="Chocolate Thick Shake">
+        <button class="add-btn" data-name="Chocolate Thick Shake" data-price="189">ADD +</button>
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Veg Whopper Jr+Coca Cola Medium.</h3>
+        <p class="item-cost">₹244.00</p>
+        <p class="item-desc"></p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/3/31/6e8947ce-a25d-4bd6-a5a1-117af58504c4_fe69fcc7-1c3f-4c98-8e17-0aa23964de2f.jpg" alt="Veg Whopper Jr+Coca Cola Medium.">
+        <button class="add-btn" data-name="Veg Whopper Jr+Coca Cola Medium." data-price="244">ADD +</button>
+    </div>
+</div>
+
+    
+    
+    
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Crispy Chicken Burger + Fries (Reg) + Coca Cola</h3>
+        <p class="item-cost">₹169.00</p>
+        <p class="item-desc">Crispy Chicken Patty, Onion &amp; Our Signature Tomato Herby Sauce. Served with Crispy Fries &amp; Cola. 
+    </p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/29/1b2fb863-204d-4c06-b67b-3e7c7c98ca1d_58cfc75f-09d2-48b4-b23f-1367bbefaab7.jpg" alt="Crispy Chicken Burger + Fries (Reg) + Coca Cola">
+        <button class="add-btn" data-name="Crispy Chicken Burger + Fries (Reg) + Coca Cola"data-price="169">ADD +</button>
+    </div>
+</div>
+
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">11Pc Boneless Wings</h3>
+        <p class="item-cost">₹329.00</p>
+        <p class="item-desc">Save Rs 108 | 11pcs Boneless Bites</p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/615526d92bf62a45c983f58e0c994c60" alt="11Pc Boneless Wings">
+        <button class="add-btn" data-name="11Pc Boneless Wings"data-price="329">ADD +</button>
+    </div>
+</div>
+
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Fiery Chicken Wrap+Fries(Reg)</h3>
+        <p class="item-cost">₹279.00</p>
+        <p class="item-desc">Fiery Chicken Wrap+Fries(Reg) 
+        Qty: 324 Gms| Kcal: 688.1 | Carbs 324.2 Gms| Sugar: 9.3 Gms| Fat: 31.4 Gms| Saturated fat: 12.4 Gms</p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d64be3882de6ee5b366224e7e2d84a94" alt="Fiery Chicken Wrap+Fries(Reg)">
+        <button class="add-btn" data-name="Fiery Chicken Wrap+Fries(Reg)"data-price="279">ADD +</button>
+    </div>
+</div>
+
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Paneer Royale Wrap+Fries(Reg)</h3>
+        <p class="item-cost">₹279.00</p>
+        <p class="item-desc">Paneer Royale Wrap+Fries(Reg) 
+        Qty: 306 Gms| Kcal: 880.5 | Carbs 336.8 Gms| Sugar: 9.7 Gms| Fat: 44.5 Gms| Saturated fat: 22.2 Gms| Protein: 28.9 Gms| Sodium: 1402.9 Mg 
+        Contains: Gluten, Soybean, Milk</p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/80fb9bbb88ef15d0f83d5e7074b46778" alt="Paneer Royale Wrap+Fries(Reg)">
+        <button class="add-btn" data-name="Paneer Royale Wrap+Fries(Reg)"data-price="279">ADD +</button>
+    </div>
+</div>
+
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Hot 'N' Saucy Burger+Fries(Reg)</h3>
+        <p class="item-cost">₹269.00</p>
+        <p class="item-desc">Hot'N'Saucy Burger+Fries(Reg) 
+        Qty: 327 Gms| Kcal: 886.3 | Carbs 0 Gms| Sugar: 17.5 Gms| Fat: 40.3 Gms| Saturated fat: 16.2 Gms| Protein: 21.5 Gms| Sodium: 1523.5 Mg 
+        Contains: Gluten, Soybean, Milk</p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/4bdeb1eb40c046c5f5098ce7cafc2a9c" alt="Hot 'N' Saucy Burger+Fries(Reg)">
+        <button class="add-btn" data-name="Hot 'N' Saucy Burger+Fries(Reg)"data-price="269">ADD +</button>
+    </div>
+</div>
+
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Fiery Chicken Burger+Fries(Reg)</h3>
+        <p class="item-cost">₹269.00</p>
+        <p class="item-desc">Fiery Chicken Burger+Fries(Reg) 
+        Qty: 319 Gms| Kcal: 792.3 | Carbs 337.6 Gms| Sugar: 12.1 Gms| Fat: 35.5 Gms| Saturated fat: 12.9 Gms| Protein: 26.7 Gms| Sodium: 1426.3 Mg 
+        Contains: Gluten, Soybean, Milk</p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/c7c28337a2b39fe428fcd969ed1e271c" alt="Fiery Chicken Burger+Fries(Reg)">
+        <button class="add-btn" data-name="Fiery Chicken Burger+Fries(Reg)"data-price="269">ADD +</button>
+    </div>
+</div>
+
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Paneer Royale Burger+Fries(Reg)</h3>
+        <p class="item-cost">₹269.00</p>
+        <p class="item-desc">Paneer Royale Burger+Fries(Reg) 
+        Qty: 327 Gms| Kcal: 761.8 | Carbs 357.6 Gms| Sugar: 14.8 Gms| Fat: 37.9 Gms| Saturated fat: 18.2 Gms| Protein: 22.5 Gms| Sodium: 1503 Mg 
+        Contains: Gluten, Soybean, Milk</p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8e91c5dad053aea85cf4d198c08f86c" alt="Paneer Royale Burger+Fries(Reg)">
+        <button class="add-btn" data-name="Paneer Royale Burger+Fries(Reg)" data-price="269">ADD +</button>
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+</div>
+</div></div></div>
+
+<script src="/javascripts/menu.js"></script>
+
+</body> 
+</html> 

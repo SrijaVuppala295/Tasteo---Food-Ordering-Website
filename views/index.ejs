@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering Website</title>
+  <!-- BOOTSTRAP CDN LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- BOOTSTRAP CDN LINK -->
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- GOOGLE FONTS LINK -->
+
+ <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+          <div class="navbar-left">
+            <a href="/index" class="navbar-brand" id="logo"><img src="/images/image (1).png" alt=""
+              style="width: 150px; height: 60px; padding-left: 20px;"></a>
+              
+          </div>
+          <div class="navbar-right">
+              <a href="/index" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+              <a href="/menu" class="nav-link"> <i class="fa-solid fa-bars"></i> Menu</a>
+              
+              <a href="/cart" class="nav-link cart">
+                <i class="fa-solid fa-cart-shopping"></i> Cart <span class="cart-count">0</span>
+              </a>
+              <a href="/contact" class="nav-link">  <i class="fa-solid fa-phone"></i>Contact</a>
+              <a href="/" class="nav-link">  <i class="fa-solid fa-user"></i> Logout</a>
+     </div>
+      </nav>
+  <!-- Header Start -->
+  <div class="header" >
+    <div class="header-contents">
+      <h2> Order your online food here</h2>
+      <!-- <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise.Our mission is to satisfy your cravings and elevate your dining experience,one delicious meal at a time.</p> -->
+      <button> View Menu </button>
+   </div>
+  </div>
+  <!-- Header End -->
+  <!-- Services -->
+  <div class="services">
+    <h2>Why you'll Tasteo</h2>
+    <div class="services-container">
+  <div class="card">
+    <img class="card-img-top" src="/images/Dining.avif" alt="Card image cap">
+    <div class="card-body">
+      <h4>Dining</h4>
+      <p class="card-text">Experience a delightful culinary journey with our dining services. From gourmet meals to casual bites, our diverse menu is designed to satisfy every palate. Enjoy the perfect ambiance and exceptional service that make every meal a memorable occasion</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="/images/OrderOnline.avif" alt="Card image cap">
+    <div class="card-body">
+      <h4>Order Now</h4>
+      <p class="card-text">Enjoy the convenience of ordering your favorite dishes online. Whether you're craving a quick snack or a full meal, our online ordering system ensures you get what you want, when you want it. Fast, easy, and delivered right to your door</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="/images/Nightlife.avif" alt="Card image cap">
+    <div class="card-body">
+      <h4>Nightlife</h4>
+      <p class="card-text">Discover the vibrant nightlife with our exclusive club services. Dance the night away, enjoy live music, and socialize in a lively atmosphere. Our clubs offer the perfect blend of entertainment, music, and excitement for an unforgettable night out</p>
+    </div>
+  </div>
+</div> 
+</div>
+
+<!-- AboutUs -->
+  <section id="about-us" style="background-color: #75A47F; color: #333;">
+  <img src="/images/aboutus.avif" alt="Passion Led Us Here" class="about-us-image">
+  <div class="about-us-text">
+      <h2 style="color: #333;">AboutUs</h2>
+      <p>
+        Our food ordering website offers a convenient and seamless way to satisfy your cravings with just a few clicks. Explore a diverse range of cuisines, from local favorites to international delights, all available for delivery or pickup. With user-friendly navigation and secure payment options, ordering your favorite meals has never been easier. Whether you're craving comfort food or exploring new flavors, our website connects you with delicious options from top-rated restaurants in your area. Discover the joy of hassle-free dining from the comfort of your home with our food ordering website
+      </p>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<div class="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonials-container">
+      <div class="testimonial-card">
+        <img src="/images/testimonial1.jpeg" alt="Customer 2">
+          <p class="testimonial-text">"The food was absolutely amazing! Quick delivery and fantastic service. Highly recommend!"</p>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+          </div>
+          <p class="testimonial-author">- Sarah L.</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="/images/testimonial2.jpg" alt="Customer 2">
+          <p class="testimonial-text">"Great variety of dishes to choose from. Everything was fresh and delicious. Will order again!"</p>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+          </div>
+          <p class="testimonial-author">- John D.</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="/images/testimonial3.jpeg" alt="Customer 2">
+          <p class="testimonial-text">"The best online food ordering experience I've ever had. Easy to navigate and fast delivery."</p>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+          </div>
+          <p class="testimonial-author">- Emily R.</p>
+      </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer style="background-color: #F1F1F1;">
+  <div class="sec1">
+    <section class="sec2">
+      <img src="/images/image (1).png" alt="">
+      <div class="sec2-emp"></div>
+      <section class="selector">
+        <div class="India">
+          <img src="/images/India.png" alt="">
+          <p>India</p>
+          <i class="fa-solid fa-chevron-down" style="color:rgb(0,0,0,);" ></i>
+        </div>
+        <div class="English">
+          <i class="fa-solid fa-globe" style="color:rgb(0,0,0,);"></i>
+          <p>English</p>
+          <i class="fa-solid fa-chevron-down" style="color:rgb(0,0,0,);">
+          </i>
+        </div>
+      </section>
+    </section>
+    <div class="main-footer">
+      <div class="foot1">
+        <h6>ABOUT TasteO</h6>
+        <nav>
+          <a href="#">
+            <p> Who are we</p>
+          </a>
+          <a href="#">
+            <p>Blog</p>
+          </a>
+          <a href="#">
+            <p> Work with Us</p>
+          </a>
+          <a href="#">
+            <p>Investor Relations</p>
+          </a>
+          <a href="#">
+            <p>Report Fraud</p>
+          </a>
+          <a href="#">
+            <p>Contact Us</p>
+          </a>
+        </nav>
+    </div>
+        <div class="foot2">
+          <h6>Company</h6>
+        <nav>
+          <a href="#">
+            <p> About</p>
+          </a>
+          <a href="#">
+            <p>Features</p>
+          </a>
+          <a href="#">
+            <p>Team</p>
+          </a>
+          <a href="#">
+            <p>Menu</p>
+          </a>
+          <a href="#">
+            <p>Company</p>
+          </a>
+          <a href="#">
+            <p>How this works</p>
+          </a>
+        </nav>
+        </div>
+     
+      <div class="foot3">
+        <div class="foot3-1">
+          <h6>FOR RESTAURANTS</h6>
+          <nav>
+            <a href="#">
+              <p>Partner with Us</p>
+            </a>
+            <a href="#">
+              <p>Apps For You</p>
+            </a>
+          </nav>
+        </div>
+       
+          <div class="foot3-2">
+            <h6>FOR ENTERPRISES</h6>
+            <nav>
+              <a href="#">
+                <p>TasteO For Enterprise</p>
+              </a>
+            </nav>
+          </div>
+      </div>
+
+        <div class="foot4">
+          <h6>Learn More</h6>
+        <nav>
+          <a href="#">
+            <p>Privacy</p>
+          </a>
+          <a href="#">
+            <p>Security</p>
+          </a>
+          <a href="#">
+            <p>Terms</p>
+          </a>
+          <a href="#">
+            <p>Services</p>
+          </a>
+          <a href="#">
+            <p>SiteMap</p>
+          </a>
+        </nav>
+      </div>
+        <div class="foot5">
+          <h6>SOCIAL LINKS</h6>
+           <div class="icons">
+            <a target="_blank" href="#">
+              <i class="fa-brands fa-linkedin" style="color:rgb(0,0,0,);">
+              </i>
+            </a>
+            <a target="_blank" href="#">
+              <i class="fa-brands fa-instagram" style="color:rgb(0,0,0,);">
+            </i>
+            </a>
+            <a target="_blank" href="#">
+              <i class="fa-brands fa-twitter" style="color:rgb(0,0,0,);">
+           </i>
+            </a>
+            <a target="_blank" href="#">
+              <i class="fa-brands fa-youtube" style="color:rgb(0,0,0,);">
+             </i>
+            </a>
+            <a target="_blank" href="#">
+              <i class="fa-brands fa-facebook" style="color:rgb(0,0,0,);">
+             </i>
+              </a>
+           </div>
+          <div class="blank1"></div>
+          <section class="store">
+            <a href="#">
+              <div class="store-img">
+                <img src="/images/app_store.png" alt="">
+              </div>
+            </a>
+            <div class="blank2"></div>
+            <a href="#">
+              <div class="store-img">
+                <img src="/images/play_store.png" alt="">
+              </div>
+            </a>
+          </section>
+        </div>
+    </div>
+    <hr class="h-line">
+  
+    <p class="copyright">
+      "By continuing past this page,you agree to our Terms of Service, Cookie Policy,Privacy Policy, and Content Policies.All trademarks are properties of their respestive owners,© TaestO Ltd.All rights reserved."
+    </p>
+  </div>
+</footer>
+</body>
+</html>

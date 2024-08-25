@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering Website</title>
+  <!-- BOOTSTRAP CDN LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- BOOTSTRAP CDN LINK -->
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css'>
+
+  <!-- GOOGLE FONTS LINK -->
+
+ <link rel="stylesheet" href="/stylesheets/style.css">
+ <!-- <link rel="stylesheet" href="../css/menuitems.css"> -->
+ <link rel="stylesheet" href="/stylesheets/menuitem.css">
+
+ 
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <a href="/index" class="navbar-brand" id="logo"><img src="/images/image (1).png" alt=""
+            style="width: 150px; height: 60px; padding-left: 20px;"></a>
+            
+        </div>
+        <div class="navbar-right">
+            <a href="/index" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="/menu" class="nav-link"> <i class="fa-solid fa-bars"></i> Menu</a>
+           
+            <a href="/cart" class="nav-link cart">
+              <i class="fa-solid fa-cart-shopping"></i> Cart <span class="cart-count">0</span>
+            </a>
+            <a href="/contact" class="nav-link">  <i class="fa-solid fa-phone"></i>Contact</a>
+            <a href="/" class="nav-link">  <i class="fa-solid fa-user"></i> Logout</a>
+   </div>
+    </nav>
+
+
+<div class="restaurant-menu">
+    <div class="restaurant-summary">
+        <img class="restaurant-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/2b4f62d606d1b2bfba9ba9e5386fabb7" alt="Pizza Hut">
+        <div class="restaurant-summary-details">
+            <h2 class="restaurant-title">Pizza Hut</h2>
+            <p class="restaurant-tags">Pizzas</p>
+            <div class="restaurant-details">
+            <div class="restaurant-rating" style="color: white;">
+                <i class="fa-solid fa-star"></i>
+                <span>4.1</span>
+            </div>
+            <div class="restaurant-rating-slash">|</div><div>35-40 MINS</div><div class="restaurant-rating-slash">|</div>
+            <div>₹350 for two</div>
+        </div>
+    </div>
+</div>
+<div class="restaurant-menu-content">
+    <div class="menu-items-container">
+        <!-- <div class="menu-title-wrap">
+            <h3 class="menu-title">Recommended</h3>
+            <p class="menu-count">47 ITEMS</p>
+        </div> -->
+        <div class="menu-items-list">
+            <div class="menu-item">
+                <div class="menu-item-details">
+                  <h3 class="item-title">Tandoori Paneer</h3>
+                  <p class="item-cost">₹299.00</p>
+                  <p class="item-desc">Serves 1 | It's our signature. Spiced paneer, crunchy onions & green capsicum, spicy
+                    red paprika with delicious tandoori sauce and 100% mozzarella cheese! (PAN Per/Med-335 Kcal/100g </p>
+                </div>
+                <div class="menu-img-wrapper">
+                  <img class="menu-item-img"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/s5ld93rsknx0fhj6xarn"
+                    alt="Tandoori Paneer">
+                 <button class="add-btn" data-name="Tandoori Paneer" data-price="299"> ADD +</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-details">
+                  <h3 class="item-title">Veggie Supreme</h3>
+                  <p class="item-cost">₹349.00</p>
+                  <p class="item-desc">Serves 1 | A supreme combination of black olives, green capsicum, mushroom, onion,
+                    spicy red paprika & juicy sweet corn with flavourful pan sauce and 100% mozzarella cheese.</p>
+                </div>
+                <div class="menu-img-wrapper">
+                  <img class="menu-item-img"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/z0c4xpovma1qtmu4tlls"
+                    alt="Veggie Supreme">
+                  <button class="add-btn" data-name="Veggie Supreme" data-price="349"> ADD +</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-details">
+                  <h3 class="item-title">Margherita</h3>
+                  <p class="item-cost">₹300.00</p>
+                  <p class="item-desc">Pizza topped with our herb</p>
+                </div>
+                <div class="menu-img-wrapper">
+                  <img class="menu-item-img"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dpventcrozvfni0lqb10"
+                    alt="Margherita">
+                  <button class="add-btn" data-name="Margherita" data-price="300"> ADD +</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-details">
+                  <h3 class="item-title">Country Feast</h3>
+                  <p class="item-cost">₹349.00</p>
+                  <p class="item-desc">Serves 1 | Loaded with herbed onion & green capsicum, sweet corn, tomato with signature
+                    pan sauce and 100% mozzarella cheese. It's a feast you can't refuse .</p>
+                </div>
+                <div class="menu-img-wrapper">
+                  <img class="menu-item-img"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/c3832837392378cca98e484b89c313ba"
+                    alt="Country Feast">
+                  <button class="add-btn" data-name="Country Feast" data-price="349"> ADD +</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-details">
+                  <h3 class="item-title">Veggie Feast</h3>
+                  <p class="item-cost">₹329.00</p>
+                  <p class="item-desc">Serves 1 | Herbed onion and green capsicum, juicy sweet corn & 100% mozzarella cheese
+                    with flavourful pan sauce </p>
+                </div>
+                <div class="menu-img-wrapper">
+                  <img class="menu-item-img"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/cbye9x7wxeopwqvenn7g"
+                    alt="Veggie Feast">
+                  <button class="add-btn" data-name="Veggie Feast" data-price="329"> ADD +</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-details">
+                  <h3 class="item-title">Classic Bread Stix</h3>
+                  <p class="item-cost">₹119.00</p>
+                  <p class="item-desc">Serves 1 | Freshly baked buttery bread stix, sprinkled with herbs (287 Kcal/100g).
+                    Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</p>
+                </div>
+                <div class="menu-img-wrapper">
+                  <img class="menu-item-img"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/n2ycmete7ehes9mrerlw"
+                    alt="Classic Bread Stix">
+                  <button class="add-btn" data-name="Classic Bread Stix" data-price="119"> ADD +</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-details">
+                  <h3 class="item-title">Loaded Bread Stix</h3>
+                  <p class="item-cost">₹169.00</p>
+                  <p class="item-desc">Serves 1 | Freshly baked bread stix, topped with cheesy dressing & herbs (320
+                    Kcal/100g). Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</p>
+                </div>
+                <div class="menu-img-wrapper">
+                  <img class="menu-item-img"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/o0zibtrbtyjwznptrsgy"
+                    alt="Loaded Bread Stix">
+                  <button class="add-btn" data-name="Loaded Bread Stix" data-price="169"> ADD +</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-details">
+                  <h3 class="item-title">Garlic Bread Spicy Supreme</h3>
+                  <p class="item-cost">₹169.00</p>
+                  <p class="item-desc">Serves 1 | Garlic bread topped with 100% mozzarella cheeese, onion & green chillies
+                    (346 Kcal/100g). Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</p>
+                </div>
+                <div class="menu-img-wrapper">
+                  <img class="menu-item-img"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/m8ecjvtqcjtnt31uvobl"
+                    alt="Garlic Bread Spicy Supreme">
+                  <button class="add-btn" data-name="Garlic Bread Spicy Supreme" data-price="169"> ADD +</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-details">
+                  <h3 class="item-title">Exotica Veggie Garlic Bread - New</h3>
+                  <p class="item-cost">₹159.00</p>
+                  <p class="item-desc">Serves 1 | Hut's signature garlic bread topped with spiced exotic veggies and cheesy
+                    dressing (449 Kcal/100g). Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</p>
+                </div>
+                <div class="menu-img-wrapper">
+                  <img class="menu-item-img"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/e4f730c3f48f82fce15895dacf3e9081"
+                    alt="Exotica Veggie Garlic Bread - New">
+                  <button class="add-btn" data-name="Exotica Veggie Garlic Bread" data-price="159"> ADD +</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-details">
+                  <h3 class="item-title">Sprinkled Fries - New</h3>
+                  <p class="item-cost">₹109.00</p>
+                  <p class="item-desc">Serves 1 | Baked fries seasoned with our signature peruvian seasoning (204 Kcal/100g)
+                    Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.</p>
+                </div>
+                <div class="menu-img-wrapper">
+                  <img class="menu-item-img"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/frgza6cm1sjezw79pjtu"
+                    alt="Sprinkled Fries">
+                  <button class="add-btn" data-name="Sprinkled Fries" data-price="109">ADD +</button>
+                </div>
+              </div>
+           
+   
+
+
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Margherita - Personal</h3>
+        <p class="item-cost">₹169.00</p>
+        <p class="item-desc">Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese. A classic treat for all cheese lovers out there! (PAN Per-292Kcal/100g)</p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dpventcrozvfni0lqb10" alt="Margherita - Personal">
+        <button class="add-btn" data-name="Margherita" data-value="₹169"> ADD +</button>
+    </div>
+</div>
+
+<div class="menu-item">
+    <div class="menu-item-details">
+        <h3 class="item-title">Schezwan Margherita - Personal</h3>
+        <p class="item-cost">₹219.00</p>
+        <p class="item-desc">Serves 1 | Your very own Margherita, now with a spicy twist! Loaded with our signature spicy schezwan sauce & 100% mozzarella cheese (PAN Per-300Kcal/100g)</p>
+    </div>
+    <div class="menu-img-wrapper">
+        <img class="menu-item-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/0e7df98b7cffdb0b88856464014ad2ff" alt="Schezwan Margherita - Personal">
+        <button class="add-btn" data-name="Schezwan" data-value="₹219"> ADD +</button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<script src="/javascripts/menu.js"></script>
+</body> 
+</html>                       
